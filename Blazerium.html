@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blazerium</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            overflow-x: hidden;
+            transition: background-color 1s ease;
+        }
+
+        /* Эффект плавного фона */
+        body {
+            animation: backgroundChange 10s infinite alternate;
+        }
+
+        @keyframes backgroundChange {
+            0% { background-color: #e0f7fa; }
+            50% { background-color: #b2dfdb; }
+            100% { background-color: #80cbc4; }
+        }
+
+        header {
+            background-color: transparent;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            font-size: 3rem;
+            letter-spacing: 2px;
+            font-family: 'Courier New', Courier, monospace;
+            animation: fadeIn 2s ease forwards;
+            position: relative;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        header h1 {
+            font-size: 3rem;
+            color: #000;
+            transition: transform 0.5s ease;
+        }
+
+        header:hover h1 {
+            transform: rotateY(360deg);
+        }
+
+        nav {
+            background-color: #444;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 1rem;
+            display: inline-block;
+            font-weight: bold;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ff5722;
+            transform: scale(1.1);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .post-card {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .post-card:hover {
+            transform: scale(1.05);
+        }
+
+        .post-card img {
+            width: 30%;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+
+        .post-card div {
+            width: 65%;
+        }
+
+        .post-card h2 {
+            color: #333;
+            font-size: 1.8rem;
+        }
+
+        .post-card p {
+            color: #666;
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        .contact-info a {
+            font-size: 1.5rem;
+            text-decoration: none;
+            color: #4CAF50;
+            margin: 0.5rem;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: #45a049;
+            transform: scale(1.1);
+        }
+
+        /* Подписка на новости */
+        .subscribe-form {
+            background-color: #f5f5f5;
+            padding: 2rem;
+            text-align: center;
+            border-radius: 10px;
+            margin-top: 3rem;
+        }
+
+        .subscribe-form input[type="email"] {
+            padding: 1rem;
+            margin-top: 1rem;
+            width: 80%;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .subscribe-form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 0.7rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 1rem;
+        }
+
+        .subscribe-form button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Blazerium</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="container">
+        <div class="post-card">
+            <img src="https://via.placeholder.com/300" alt="Post Image 1">
+            <div>
+                <h2>My First Blog Post</h2>
+                <p>Hello everyone! My name is Sanjar, and this is my very first blog post. I hope you're all doing well and feeling great. Thank you for joining me on this journey!</p>
+            </div>
+        </div>
+        <div class="post-card">
+            <img src="https://via.placeholder.com/300" alt="Post Image 2">
+            <div>
+                <h2>Second Blog Post</h2>
+                <p>This is the content of the second blog post. Keep adding more posts as you go!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-info">
+        <h3>Follow Me:</h3>
+        <a href="https://www.instagram.com/forealblazer?igsh=MWs2MGoyYnc1NWcyMA==" target="_blank">Instagram</a>
+        <a href="mailto:spanchcoob@gmail.com">Email</a>
+    </div>
+
+    <div class="subscribe-form">
+        <h3>Subscribe for updates</h3>
+        <input type="email" placeholder="Enter your email">
+        <button type="button">Subscribe</button>
+    </div>
+
+</body>
+</html>
